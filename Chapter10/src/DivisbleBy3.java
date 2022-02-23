@@ -79,7 +79,7 @@ public class DivisbleBy3 {
 				int num = Integer.parseInt(input);
 				
 				
-				if(num % 3 >= 1 || num % 9 <= -1)  {
+				if(num % 3 >= 1 || num % 3 <= -1)  {
 					output.setText("Your integer " + num + " is not divisble by 3");
 				}
 				
