@@ -1,34 +1,55 @@
 package disk;
 
 public class Puck {
-
+	
+	static double weight = 5.1;
 	static boolean standard;
 	static boolean youth;
-	static double weight = 3.5;
-	static boolean puck;
-
-	public static boolean getWeight() {
-		
-		if(weight >= 5.0 && weight <= 5.5) 
-		{
-			standard = true;
-		}
-		else if(weight >= 4.0 && weight <= 4.5) {
-			standard = false;
-		}
-		return standard;
+	
+	public boolean standard() {
+	
+	
+		return(standard);
 	}
+	
+	public boolean youth() {
+	
+			return(youth);
+		}
+
+	
+	public boolean equals(Object p){
+		Puck test = (Puck)p;
+		
+		}
+	/*
+	standard = true;
+		youth = false;
+		standard = false;
+		youth = false;	
+		if(weight >= 5.0 || weight <= 5.5) 
+	{}
+	if(weight >= 4.0 || weight <= 4.5) {
+			standard =  false;
+			youth = true;
+	*/
+
+	public static double getWeight() {
+		
+		return(weight);
+	}
+
 	
 	public static String getDivision() {
 		String rep = "";
 		
 		if(standard==true) {
-			rep = "The puck is a standard ";
+			return rep = "The puck is a standard";
 		}
-		else if(standard == false) {
-			rep = "The Puck is youth";
+		else if(youth==true) {
+			return rep = "The Puck is youth";
 		}
-		return rep;
+			return rep;
 	}
 	
 }
